@@ -1,0 +1,118 @@
+
+/*===== Home Header CSS =====*/
+
+.navbar{
+    padding: 15px 0px;
+    padding-right: 5px;
+}
+.navbar-brand{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 80px;
+}
+.brand-logo{
+    width: 70px;
+    height: 70px;
+    transform:scale(1.4);
+}
+
+/*===== Home Header CSS END =====*/
+
+/*===== Blog Header CSS =====*/
+
+.blog-header{
+    border-bottom: 2px solid rgb(226, 222, 222) !important;
+}
+.blog-header .navbar-brand{
+    border-radius: 0px;
+    transform: scale(1.2);
+}
+
+/*===== Blog Header CSS END =====*/
+
+
+/*===== Home Main CSS =====*/
+
+.header-hero-content{
+    padding-top: 150px;
+}
+.header-hero-content .header-title{
+    line-height: 50px;
+}
+@media (max-width: 767px) {
+    
+    .header-hero-content{
+        padding-top: 180px;
+    }
+    .header-hero-content .header-sub-title{
+        font-size: 19px;
+    }
+    .header-hero-content .header-title{
+        font-size: 24px;
+        line-height: 40px;
+        padding: 0px 4px;
+    }
+}
+
+/*===== Home Main CSS End =====*/
+
+
+/*===== Join Team CSS =====*/
+
+ .join-now-btn{
+    display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0px 20px !important;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff !important;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 40px;
+  background: -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background-size: 200%;
+  background-size: 200%; 
+}
+  
+#jointeam .join-now-btn:hover{
+    opacity: 0.8;
+}
+
+/*===== Join Team CSS End=====*/
+
+
+/*===== Why to Choose CSS =====*/
+
+#why ul{
+    padding-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+#why li{
+    text-transform: uppercase;
+}
+
+/*===== Why to Choose CSS End=====*/
+
+#contact .submit-btn{
+    padding: 0px 20px;
+    margin: 0px;
+    text-align: left;
+}

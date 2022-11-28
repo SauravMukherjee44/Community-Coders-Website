@@ -1,3 +1,5 @@
 # Community-Coders-Website
 
- <img src="assets/images/main-logo.svg" alt="logo">
+<h1> In Development Phase 🚀</h1>
+<br>
+ <img width="50%" align="center" src="assets/images/main-logo.svg" alt="logo">

@@ -869,7 +869,12 @@ p {
   transition: all 0.3s ease-out 0s;
   padding: 50px 30px;
   border: 2px solid transparent;
-  border-radius: 8px; }
+  border-radius: 8px; 
+}
+#joinus .single-services{
+  height: 296px;
+  overflow: hidden;
+}
   @media (max-width: 767px) {
     .single-services {
       padding: 20px 20px 30px; } }
@@ -921,7 +926,13 @@ p {
     .single-services .services-content .services-title a:hover {
       color: #361CC1; }
   .single-services .services-content .text {
-    margin-top: 30px; }
+    margin-top: 10px; 
+    overflow-y: scroll;
+  }
+
+  #features .single-services{
+    height: 418px;
+  }
     @media (max-width: 767px) {
       .single-services .services-content .text {
         margin-top: 20px; } }
@@ -1532,8 +1543,8 @@ p {
 
 .footer-copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  padding-top: 15px;
-  padding-bottom: 30px; }
+  padding-top: 6px;
+  padding-bottom: 6px; }
 
 .copyright-content {
   padding-top: 15px;

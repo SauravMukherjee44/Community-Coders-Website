@@ -35,14 +35,18 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+
+}
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  overflow-x: hidden;
+}
 
 img {
   max-width: 100%; }
@@ -504,6 +508,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 5px 0px;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -788,7 +793,10 @@ p {
     color: #fff; }
     @media (max-width: 767px) {
       .header-hero-content .header-sub-title {
-        font-size: 24px; } }
+        font-size: 17px !important;
+        
+      } 
+    }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .header-hero-content .header-sub-title {
         font-size: 30px; } }
@@ -796,9 +804,13 @@ p {
     font-size: 38px;
     font-weight: 700;
     color: #fff; }
+
     @media (max-width: 767px) {
       .header-hero-content .header-title {
-        font-size: 24px; } }
+        font-size: 22px !important; 
+        line-height: 40px !important;
+      } }
+
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .header-hero-content .header-title {
         font-size: 30px; } }
@@ -992,8 +1004,31 @@ p {
     .about-shape-2 {
       display: none; } }
 
-.about-content {
-  max-width: 480px; }
+#jointeam .single-team{
+  width: 90%;
+}      
+@media screen and (max-width: 767px) {  
+    
+#jointeam .single-team{
+  width: 100%;
+}
+}
+
+#about .about-content {
+  /* max-width: 480px;  */
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.about-area{
+  /* border: 1px solid black; */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (max-width: 767px) {
+  #about .about-content{
+    margin-left: 0px;
+  }
+}
   .about-content .text {
     margin-top: 15px; }
   .about-content .main-btn {
@@ -1013,25 +1048,25 @@ p {
 ===========================*/
 .video-content {
   position: relative;
-  padding-bottom: 30px; }
-  .video-content .dots {
-    position: absolute;
-    left: -30px;
-    bottom: 0; }
+  padding-bottom: 30px; 
+}
 
 .video-wrapper {
   width: 92%;
   height: 350px;
   margin-right: 15px;
   position: relative;
-  -webkit-box-shadow: 0px 13px 46px 0px rgba(113, 113, 113, 0.33);
+  -webkit-box-shadow: 0px 13px 46px 0px rgba(76, 25, 25, 0.33);
   -moz-box-shadow: 0px 13px 46px 0px rgba(113, 113, 113, 0.33);
   box-shadow: 0px 13px 46px 0px rgba(113, 113, 113, 0.33);
   border-radius: 10px;
   overflow: hidden; }
   @media (max-width: 767px) {
     .video-wrapper {
-      margin-right: 0; } }
+      margin-right: 0;
+      width: 100%;
+      
+     } }
   /* .video-wrapper .video-image img {
     width: 50px; 
   } */
@@ -1154,7 +1189,7 @@ p {
   -moz-box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
   box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
   overflow: hidden;
-  max-width: 90%;
+  max-width: 100%;
   border-radius: 10px; 
   margin: auto;
 }
@@ -1166,6 +1201,17 @@ p {
       width: 100%; 
       height: 20em;
     }
+
+    
+@media screen and (max-width: 767px) {
+  .single-team{
+    max-width: 100%;
+    margin-top:20px;
+  }  
+  .single-team .team-image img{
+    height: auto;
+  }
+}
     .single-team .team-image .social {
       position: absolute;
       left: 0;
@@ -1445,7 +1491,24 @@ p {
       background-position: right center; }
 
 /*===========================
-       11.FOOTER  css 
+       11. FAQs  css 
+===========================*/
+.accordian{
+  width: 80%; 
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .accordian{
+      width: 100%;
+    }  
+    .accordion-item{
+      padding: 10px 0px;
+    }
+  }
+
+/*===========================
+       12.FOOTER  css 
 ===========================*/
 .footer-area {
   background-position: top center;
@@ -1554,6 +1617,7 @@ p {
   .copyright-content a {
     font-size: 16px;
     color: #fff;
+    display:inline-flex;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;

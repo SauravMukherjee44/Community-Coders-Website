@@ -1049,12 +1049,13 @@ p {
 .video-content {
   position: relative;
   padding-bottom: 30px; 
+
 }
 
 .video-wrapper {
-  width: 92%;
-  height: 350px;
-  margin-right: 15px;
+  width: 850px;
+  height: 500px;
+  margin:  auto;
   position: relative;
   -webkit-box-shadow: 0px 13px 46px 0px rgba(76, 25, 25, 0.33);
   -moz-box-shadow: 0px 13px 46px 0px rgba(113, 113, 113, 0.33);

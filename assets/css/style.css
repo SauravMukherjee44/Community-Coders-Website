@@ -122,6 +122,10 @@ p {
   color: #6A6972;
   margin: 0px; }
 
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {    
+  overflow: hidden;
+}
+
 .bg_cover {
   background-position: center center;
   background-size: cover;
@@ -514,7 +518,9 @@ p {
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s; }
+  transition: all 0.3s ease-out 0s; 
+  /* min-height: 70px; */
+}
 
 .sticky {
   position: fixed;
@@ -529,7 +535,8 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
   .sticky .navbar {
-    padding: 10px 0; }
+    padding: 10px 0; 
+  }
 
 .navbar {
   padding: 25px 0;
@@ -887,6 +894,12 @@ p {
   height: 296px;
   overflow: hidden;
 }
+
+#joinus .joindiscord{
+  width: 550px;
+  display: flex;
+  margin: auto;
+}
   @media (max-width: 767px) {
     .single-services {
       padding: 20px 20px 30px; } }
@@ -1054,7 +1067,7 @@ p {
 
 /* ====== Partners ======= */
 .communityPartner__image {
-  height: 100px;
+  height: 120px;
   width: auto;
   filter: drop-shadow(2px 2px 2px black);
   transition: transform 0.3s, filter 0.3s;
@@ -1119,12 +1132,17 @@ p {
   color: var(--primary);
 }
 
+.navbar-brand{
+  overflow: hidden;
+}
+
 .navbar-brand img {
-  width: 50px;
+  width: 65px;
+  transform: scale(1.31);
 }
 
 .top-nav-collapse .navbar-brand img {
-  width: 50px;
+  width: 65px;
 }
 
 /* //// Community partners //// */
@@ -1239,18 +1257,20 @@ p {
      } }
 
 
-     
-
 .video-wrapper {
   width: 850px;
-  height: 500px;
+  /* height: 500px; */
   margin:  auto;
   position: relative;
   -webkit-box-shadow: 0px 13px 46px 0px rgba(76, 25, 25, 0.33);
   -moz-box-shadow: 0px 13px 46px 0px rgba(113, 113, 113, 0.33);
   box-shadow: 0px 13px 46px 0px rgba(113, 113, 113, 0.33);
   border-radius: 10px;
-  overflow: hidden; }
+  overflow: hidden; 
+}
+.video-wrapper source{
+  border: 1px solid red;
+}
   @media (max-width: 767px) {
     .video-wrapper {
       margin-right: 0;

@@ -16,13 +16,13 @@ $(function () {
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
             $(".navbar .navbar-brand img").attr("src", "assets/images/main-logo.svg");
-            $(".navbar .navbar-brand img").css("transform", "scale(1.5)");
+            $(".navbar .navbar-brand img").css("transform", "scale(1.31)");
             $(".navbar .navbar-brand").css("border-radius", "80px");
         } else {
             $(".navbar-area").addClass("sticky");
             $(".navbar .navbar-brand img").attr("src", "assets/images/main-logo-2.svg");
             $(".navbar .navbar-brand").css("border-radius", "0px");
-            $(".navbar .navbar-brand img").css("transform", "scale(1.7)");
+            $(".navbar .navbar-brand img").css("transform", "scale(1.5)");
         }
     });
 

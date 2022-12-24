@@ -852,6 +852,7 @@
 			  <div class="row mx-5">
 				  <div class="col-lg">
 					  <form class="mt-5" id="contactForm" method="post">
+                        <h5 class="alert">We will Soon reach to you</h5>
 						  <div class="form-row">
 							  <div class="form-group col-md-6 ">
 								<input type="text" class="form-control" id="inputName"  placeholder="Name" required>
@@ -891,10 +892,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
+                        <h3 class="subscribeAlert">Subscribed to Newsletter</h3>
                         <div class="subscribe-form mt-50">
-                            <form action="#">
-                                <input type="text" placeholder="Enter eamil">
-                                <button class="main-btn">Subscribe</button>
+                            <form action="#" id="subscribeForm">
+                                <input type="text" id="subEmail" placeholder="Enter eamil">
+                                <button type="submit" class="main-btn">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -990,30 +992,11 @@
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyAmBsxAf28DfEpkw0thtnzsocuxyA1WmgM",
-          authDomain: "community-coders-website.firebaseapp.com",
-          projectId: "community-coders-website",
-          storageBucket: "community-coders-website.appspot.com",
-          messagingSenderId: "876853305565",
-          appId: "1:876853305565:web:271d7ec151379bc9cd7b34",
-          measurementId: "G-7LVV8KZVC7"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-
+<!--====== Firebase js ======--> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.15.0/firebase-app.js" integrity="sha512-KakHaWvNgg3Mo/LptevcdwXzAmSFCFHrsvRUIRbUb++of57rXmIPQiAmpEeqaEdvhVk0ljxT2FpQk+wvP+j5LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="assets/js/firebase.js"></script>
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>

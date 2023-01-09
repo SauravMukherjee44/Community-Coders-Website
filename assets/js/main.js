@@ -26,7 +26,6 @@ $(function () {
         }
     });
 
-
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
